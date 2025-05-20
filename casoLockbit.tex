@@ -1,13 +1,26 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
+
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{titling}
 \usepackage{setspace}
 \usepackage{lipsum} % Per testo segnaposto
 
-\title{L'Operazione "Cronos" e l'impatto sul Diritto Informatico}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,LO]{Sohail Mama - Giovanni Donati} % page number 
+\fancyfoot[RE,RO]{\thepage} % other info
+
+\usepackage{comment}
+
+\title{\textbf{L'Operazione Cronos e l'impatto sul Diritto Informatico}}
 \author{Sohail Mama, Giovanni Donati}
 \date{a.a 2024/2025}
 
@@ -19,7 +32,8 @@
 \begin{center}
 \textit{L'Operazione "Cronos" è stata una delle più significative azioni internazionali contro il cybercrime, mirata a smantellare il gruppo ransomware LockBit. Questo research work analizza il contesto giuridico dell'operazione e le implicazioni legali nel contrasto ai ransomware.}
 \end{center}
-\vfill
+\vspace{3cm}
+
 
 \newpage
 \tableofcontents
@@ -27,7 +41,7 @@
 
 \section{LockBit: Storia e Modus Operandi}
 LockBit è un gruppo di hacker russi emerso nel 2019, noto per la sua attività di ransomware e ha colpito numerose organizzazioni in tutto il mondo. La cyber-gang ha raggiunto notorietà per la sua capacità di cifrare i dati delle vittime e chiedere riscatti elevati per il ripristino dei file. \\
-La gang opera con il metodo «ransomware as a service», ovvero si appoggia a piattaforme ransomware da cui acquisisce servizi di intrusione via via più sofisticati a seconda della piattaforma da violare.\\
+La gang opera con il metodo "ransomware as a service", ovvero si appoggia a piattaforme ransomware da cui acquisisce servizi di intrusione via via più sofisticati a seconda della piattaforma da violare.\\
 A comporre Lockbit sono circa 100 persone che dividono i compiti. C'è chi sviluppa il malware, c'è chi trova i punti di accesso e c'è chi invece effettua l'attacco utilizzando il malware sviluppato dai primi.\\
 LockBit è particolarmente temuto per la sua efficienza e per l'uso di tecniche avanzate di attacco, tra cui l'ingegneria sociale e l'accesso remoto non autorizzato.\\
 L'obiettivo di LockBit è esclusivamente quello di fare soldi, tanto che quando iniziò la guerra Russia-Ucraina, si tirarono fuori da ogni discorso politico e di appoggio a qualsiasi fazione.\\
@@ -48,18 +62,18 @@ A partire dal 2017, con l'attacco WannaCry, il ransomware è diventato un proble
 Lockbit è unanimemente riconosciuto come il ransomware attualmente più prolifico e dannoso al mondo. Nel 2022 in testa alla classifica come numero di attacchi e danni in miliardi di euro. Usa un modello di business di tipo Ransomware-as-a-Service (RaaS) che rende disponibile l'attività di Ransomware come un servizio tramite forme di pagamento a tariffa fissa, o con canone di affiliazione, o con canone di licenza una tantum.
 
 \subsection{LockBit e il Dark Web}
+
 LockBit ha fatto largo uso del dark web sia per la comunicazione interna sia per la pubblicazione dei dati rubati. \\
 Il loro portale, accessibile tramite rete Tor, includeva sezioni dedicate alle “vittime pubbliche”, con timer per la pubblicazione dei dati sensibili in caso di mancato pagamento.\\
 Questo uso strategico del dark web rappresenta una componente chiave della loro operatività, amplificando la pressione psicologica sulle vittime e aumentando la loro visibilità nel panorama criminale.
 
+\newpage
 \section{L'Operazione Cronos}
 L'Operazione “Cronos”, annunciata pubblicamente nel febbraio 2024, è stata una delle più imponenti azioni coordinate a livello globale contro la criminalità informatica.\\
 Essa ha preso di mira direttamente il gruppo ransomware LockBit, responsabile di centinaia di attacchi in tutto il mondo, colpendo enti pubblici, ospedali, aziende multinazionali e infrastrutture critiche. L'intervento ha rappresentato una svolta significativa nell'approccio operativo alla lotta contro il cybercrime, per l'ampiezza delle forze coinvolte e per l'efficacia delle azioni condotte.\\
 A distinguere l'Operazione Cronos è stato il livello di coordinamento transnazionale senza precedenti, che ha visto la cooperazione simultanea tra autorità giudiziarie, forze dell'ordine e agenzie di sicurezza cibernetica di oltre undici Paesi. L'intervento si è articolato in una complessa strategia multi-livello: da un lato, le autorità hanno eseguito sequestri fisici e digitali di server, piattaforme e strumenti di comunicazione; dall'altro, è stata condotta un'intensa attività investigativa che ha permesso di identificare membri chiave del gruppo e di tracciare i flussi finanziari legati al pagamento dei riscatti.\\
-Questa operazione ha avuto un impatto rilevante non solo sotto il profilo tecnico e operativo, ma anche sotto il profilo giuridico, politico e comunicativo. In ambito giuridico, ha sollevato importanti riflessioni circa le normative internazionali in materia di crimini informatici, la giurisdizione transnazionale e l'efficacia degli strumenti di cooperazione giudiziaria. Sul piano politico, ha evidenziato la necessità di risposte sovranazionali e integrate per fronteggiare minacce digitali che non conoscono confini geografici. Infine, da un punto di vista mediatico e simbolico, l'operazione ha segnato un colpo importante alla narrativa dell'impunità dei gruppi ransomware, dando un chiaro segnale della capacità di risposta delle istituzioni.
-
+Questa operazione ha avuto un impatto rilevante non solo sotto il profilo tecnico e operativo, ma anche sotto il profilo giuridico, politico e comunicativo. In ambito giuridico, ha sollevato importanti riflessioni circa le normative internazionali in materia di crimini informatici, la giurisdizione transnazionale e l'efficacia degli strumenti di cooperazione giudiziaria. Sul piano politico, ha evidenziato la necessità di risposte sovranazionali e integrate per fronteggiare minacce digitali che non conoscono confini geografici. Infine, da un punto di vista mediatico e simbolico, l'operazione ha segnato un colpo importante alla narrativa dell'impunità dei gruppi ransomware, dando un chiaro segnale della capacità di risposta delle istituzioni.\\
 L'Operazione Cronos si colloca dunque come un case study emblematico per comprendere le nuove dinamiche della sicurezza informatica globale, mostrando come il contrasto alla criminalità digitale richieda una convergenza di competenze giuridiche, tecniche e diplomatiche.
-
 \subsection{Il coordinamento internazionale}
 L'operazione è stata guidata congiuntamente dal National Crime Agency (NCA) del Regno Unito, dal Federal Bureau of Investigation (FBI) degli Stati Uniti e dall' Europol, con il supporto operativo di forze dell'ordine provenienti da ben 11 Paesi, tra cui Francia, Germania, Australia, Giappone, Svizzera, Canada e Paesi Bassi. Questa collaborazione ha evidenziato l'alto livello di integrazione necessario per fronteggiare minacce informatiche internazionali.\\
 Grazie a questa sinergia, sono stati eseguiti sequestri simultanei di server situati in diversi paesi con giurisdizioni anche diverse, smantellate infrastrutture digitali utilizzate per la gestione e la distribuzione del ransomware LockBit e ottenuto l'accesso a strumenti di accesso remoto. \\
@@ -75,6 +89,7 @@ Gli strumenti utilizzati riflettono una crescente convergenza tra diritto penale
 Oltre ai sequestri e agli arresti, l'Operazione Cronos ha permesso di recuperare oltre 1.000 chiavi di decrittazione, che sono state messe a disposizione gratuita delle vittime tramite la piattaforma \texttt{No More Ransom} (\url{https://www.nomoreransom.org/}). Sono state identificate più di 200 aziende compromesse e raccolte prove digitali fondamentali per futuri procedimenti giudiziari.\\
 L'operazione rappresenta un modello efficace di cooperazione multilaterale in materia di cybersicurezza e testimonia come la lotta al ransomware richieda un approccio proattivo, coordinato e tecnologicamente avanzato.
 
+\newpage
 \section{Implicazioni Giuridiche}
 Il contrasto ai reati informatici pone sfide complesse non solo sul piano tecnico, ma anche giuridico e normativo.\\
 L'Operazione Cronos, come altri interventi simili, ha evidenziato lacune nei sistemi giuridici nazionali e nella cooperazione tra Stati, spingendo per un aggiornamento degli strumenti di diritto penale, procedurale e internazionale.
@@ -105,7 +120,7 @@ Organizzazioni come Europol, Interpol e l'agenzia Eurojust forniscono supporto s
 
 In risposta a questi problemi, si discute sempre più spesso della necessità di trattati multilaterali aggiornati, come la Convenzione di Budapest sul cybercrime, e di strumenti normativi unificati a livello europeo (es. la Direttiva NIS2 o la proposta di Cyber Resilience Act).
 
-
+\newpage
 \section{Rischi Futuri e Raccomandazioni Politiche}
 
 \subsection{Tendenze future del ransomware}
@@ -133,7 +148,7 @@ Solo attraverso un impegno collettivo e duraturo sarà possibile affrontare con 
 
 
 \newpage
-\section{Fonti:}
+\section{Bibliografia:}
 \begin{itemize}
     \item \href{https://www.corriere.it/tecnologia/23_dicembre_19/chi-sono-i-russi-di-lockbit-hacker-che-hanno-bloccato-la-pubblica-amministrazione-politica-contano-solo-i-soldi-695b2492-8908-4e12-993c-5cb23941dxlk.shtml}{Corriere della Sera}
     \item \href{https://www.europol.europa.eu/media-press/newsroom/news/lockbit-ransomware-group-disrupted-in-international-cyber-police-operation}{Europol: Operazione Cronos}
